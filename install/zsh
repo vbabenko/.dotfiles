@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+# Make ZSH the default shell environment
+chsh -s $(which zsh)
+
+# Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
+rm -rf $HOME/.zshrc
+ln -s $DOTFILES/.zshrc $HOME/.zshrc
+
+# Cloning oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
+export ZSH_CUSTOM=$ZSH/custom
+
+# Installing oh-my-zsh
+git clone https://github.com/robbyrussell/oh-my-zsh.git $ZSH
+
+# Installing spaceship-prompt theme
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+
+# Installing zsh-nvm custom plugin
+git clone https://github.com/lukechilds/zsh-nvm "$ZSH_CUSTOM/plugins/zsh-nvm"

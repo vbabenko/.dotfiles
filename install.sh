@@ -2,48 +2,20 @@
 
 echo "Setting up your Mac..."
 
-# Check for Homebrew and install if we don't have it
-if test ! $(which brew); then
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi
+export DOTFILES=$HOME/.dotfiles
 
-# Update Homebrew recipes
-brew update
+# Setup Homebrew with all needed receipes, casks
+source install/brew
 
-# Install all our dependencies with bundle (See Brewfile)
-brew tap homebrew/bundle
-brew bundle
+# Setup zsh with plugins and .zshrc
+source install/zsh
 
-# Make ZSH the default shell environment
-chsh -s $(which zsh)
+# Restore application configs
+source install/mackup
 
-# Install PHP extensions with PECL
-pecl install imagick
-
-# Install Composer
-curl -sS https://getcomposer.org/installer | php
-mv composer.phar /usr/local/bin/composer
-
-# Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/spark-installer laravel/valet
-
-# Install Laravel Valet
-$HOME/.composer/vendor/bin/valet install
-
-# Install global NPM packages
-npm install --global yarn
-
-# Create a Sites directory
-# This is a default directory for macOS user accounts but doesn't comes pre-installed
-mkdir $HOME/Sites
-
-# Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
-rm -rf $HOME/.zshrc
-ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
-
-# Symlink the Mackup config file to the home directory
-ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
+# Set NVM with needed versions and global npm packages
+source install/nvm
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
-source .macos
+source install/macos

@@ -1,3 +1,6 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
+
 # Path to your dotfiles installation.
 export DOTFILES=$HOME/.dotfiles
 
@@ -8,7 +11,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="taybalt-custom"
+ZSH_THEME="spaceship"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -46,30 +49,55 @@ ZSH_THEME="taybalt-custom"
 HIST_STAMPS="dd/mm/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-ZSH_CUSTOM=$DOTFILES
+# ZSH_CUSTOM=$DOTFILES
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git git-extras)
+plugins=(
+  aws
+  brew
+  docker
+  git
+  node
+  npm
+  colorize
+  bundler
+  zsh-nvm
+)
+
+# Enabling nvm lazy loading
+export NVM_LAZY_LOAD=true
+
+# Loading thefuck
+eval $(thefuck --alias)
+
+# Loading iterm2 shell instegration if it exists
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # Activate Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
+
+# Loading zsh-completions
+fpath=($(brew --prefix)/share/zsh-completions $fpath)
+
+# Loading brew plugins
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh           # MUST be last sourced plugin
+source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh # has to be AFTER zsh-syntax-highlighting O_O
+
+# Configuring zsh-history-substring-search plugin
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 # You may need to manually set your language environment
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+# Loading nvm-auto-switch
+source $DOTFILES/zsh-nvm-auto-switch.zsh
+# # Loading nvm
+# export NVM_DIR="${HOME}/.nvm"
+# source "${NVM_DIR}/nvm.sh"
