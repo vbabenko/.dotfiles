@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
 # Make ZSH the default shell environment
-chsh -s $(which zsh)
+if [[ ! "$SHELL" =~ zsh$ ]]; then 
+  printf "\a\n\n"
+  chsh -s $(which zsh)
+fi
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
@@ -12,11 +15,20 @@ export ZSH=$HOME/.oh-my-zsh
 export ZSH_CUSTOM=$ZSH/custom
 
 # Installing oh-my-zsh
-git clone https://github.com/robbyrussell/oh-my-zsh.git $ZSH
+if [ ! -e $ZSH ]; then 
+  echo "Installing oh-my-zsh..."
+  git clone https://github.com/robbyrussell/oh-my-zsh.git $ZSH 
+fi
 
 # Installing spaceship-prompt theme
-git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+if [ ! -e "$ZSH_CUSTOM/themes/spaceship-prompt" ]; then
+  echo "Installing spaceship-prompt zsh theme..."
+  git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+  ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+fi
 
 # Installing zsh-nvm custom plugin
-git clone https://github.com/lukechilds/zsh-nvm "$ZSH_CUSTOM/plugins/zsh-nvm"
+if [ ! -e "$ZSH_CUSTOM/plugins/zsh-nvm" ]; then
+  echo "Installing zsh-nvm plugin..."
+  git clone https://github.com/lukechilds/zsh-nvm "$ZSH_CUSTOM/plugins/zsh-nvm"
+fi
