@@ -69,7 +69,7 @@ plugins=(
 )
 
 # Enabling nvm lazy loading
-export NVM_LAZY_LOAD=true
+export NVM_AUTO_USE=true
 
 # Loading thefuck
 eval $(thefuck --alias)
@@ -95,9 +95,3 @@ bindkey '^[[B' history-substring-search-down
 # You may need to manually set your language environment
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-
-# Loading nvm-auto-switch
-source $DOTFILES/zsh-nvm-auto-switch.zsh
-# # Loading nvm
-# export NVM_DIR="${HOME}/.nvm"
-# source "${NVM_DIR}/nvm.sh"
