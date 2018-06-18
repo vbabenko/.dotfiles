@@ -6,6 +6,9 @@
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
 
+# Making a "boop" sound to notify user about interaction
+echo '\a'
+
 # Ask for the administrator password upfront
 sudo -v
 
