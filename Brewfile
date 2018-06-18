@@ -36,9 +36,7 @@ cask 'beamer'                   # stream videos to Apple TV
 cask 'daisydisk'                # analyze disk usage in a visual way
 cask 'docker'
 cask 'expressvpn'               # VPN
-cask 'google-backup-and-sync'
 cask 'google-chrome'            # brewser
-cask 'gpgtools'                 # email encryption etc.
 cask 'grammarly'
 cask 'insomnia'                 # http client
 cask 'iterm2'                   # terminal app
@@ -60,7 +58,7 @@ cask 'visual-studio-code'       # ide
 cask 'vlc'                      # video player
 
 # Quicklook
-cask 'qlcolorcode'
+# cask 'qlcolorcode'            # impossible to install...
 cask 'qlmarkdown'
 cask 'quicklook-json'
 cask 'quicklook-csv'
