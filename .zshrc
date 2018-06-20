@@ -80,7 +80,10 @@ source $ZSH/oh-my-zsh.sh
 # Loading zsh-completions
 fpath=($(brew --prefix)/share/zsh-completions $fpath)
 
-# Loading brew plugins
+# Load ssh keys
+source ${DOTFILES}/load_ssh_keys.zsh
+
+# Loading zsh plugins installed with Homebrew
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh           # MUST be last sourced plugin
 source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh # has to be AFTER zsh-syntax-highlighting O_O
