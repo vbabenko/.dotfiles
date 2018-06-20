@@ -71,9 +71,6 @@ plugins=(
 # Enabling nvm lazy loading
 export NVM_AUTO_USE=true
 
-# Loading thefuck
-eval $(thefuck --alias)
-
 # Loading iterm2 shell instegration if it exists
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
