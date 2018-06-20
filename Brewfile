@@ -29,6 +29,7 @@ brew 'zsh-syntax-highlighting'
 # Apps
 cask 'aerial'                   # Apple TV Aerial screen saver
 cask 'alfred'                   # Alfred (great clipboard history)
+cask 'appcleaner'               # App for deleting apps
 cask 'backblaze'                # backup system
 cask 'bartender'                # hide icons in macOS menu bar
 cask 'beamer'                   # stream videos to Apple TV
