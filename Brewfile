@@ -4,6 +4,11 @@ tap 'caskroom/eid'
 tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
+tap 'neovim/neovim'
+tap 'rogual/neovim-dot-app'
+
+# Java dependency
+cask 'java'                                 # for working with internet banking
 
 # Install Binaries
 brew 'awscli'                               # AWS cli
@@ -15,6 +20,7 @@ brew 'mackup'                               # macOS config synchronization tool
 # brew 'mongodb'                            # noSQL database
 brew 'mas'                                  # allows to install apps from Apple AppStore
 brew 'neovim'                               # alternative editor to vim
+brew 'neovim-dot-app'                       # saparate app for neovim
 brew 'node'                                 # node.js engine
 brew 'peco'                                 # powerful alternative to grep
 brew 'redis'                                # in memory key value database
