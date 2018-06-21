@@ -15,3 +15,6 @@ brew bundle
 # Cleanup brew
 brew cask cleanup
 brew cleanup
+
+# Running instalation of backblaze
+open '/usr/local/Caskroom/backblaze/latest/Backblaze Installer.app'
