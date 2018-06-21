@@ -95,3 +95,9 @@ bindkey '^[[B' history-substring-search-down
 # You may need to manually set your language environment
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+if [ ! -e $HOME/.rvm ]; then
+  export PATH="$PATH:$HOME/.rvm/bin"
+  source $HOME/.rvm/scripts/rvm
+fi
