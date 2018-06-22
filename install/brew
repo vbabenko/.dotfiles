@@ -20,4 +20,6 @@ brew cleanup
 brew linkapps neovim-dot-app
 
 # Running instalation of backblaze
-open '/usr/local/Caskroom/backblaze/latest/Backblaze Installer.app'
+if [ ! -e "/Applications/Backblaze.app" ]; then
+  open '/usr/local/Caskroom/backblaze/latest/Backblaze Installer.app'
+fi
