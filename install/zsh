@@ -5,7 +5,8 @@ if [[ ! "$SHELL" =~ zsh$ ]]; then
   # making a "beep" sound
   printf "\a\n\n"
   # switching shell to be zsh
-  chsh -s $(which zsh)
+  # chsh -s $(which zsh)
+  chsh -s /bin/zsh
 fi
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
