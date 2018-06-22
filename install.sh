@@ -17,7 +17,7 @@ source $DOTFILES/install/zsh &&
 source $DOTFILES/install/nvm &&
 
 # Restore application configs
-source $DOTFILES/install/mackup
+source $DOTFILES/install/mackup &&
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
