@@ -12,6 +12,6 @@ for file in ${HOME}/.ssh/*.pub; do
   # if a key is not loaded yet
   if [ ! $(echo ${added_keys} | grep -o -e ${private_key}) ]; then
     # load it and store it in a key-chain
-    ssh-add -K ${private_key}
+    ssh-add -K ${HOME}/.ssh/${private_key}
   fi
 done
