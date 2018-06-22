@@ -13,6 +13,7 @@ cask 'java'                                 # for working with internet banking
 # Install Binaries
 brew 'awscli'                               # AWS cli
 brew 'awsebcli'                             # AWS ElasticBeanstalk cli
+# brew 'docker'                             # virtualization containers management
 brew 'dnscrypt-proxy'                       # allows using DNS via HTTPS
 brew 'git'                                  # version controll system
 brew 'go'                                   # programming language
@@ -38,7 +39,7 @@ brew 'zsh-syntax-highlighting'              # zsh plugin
 cask 'aerial'                               # Apple TV Aerial screen saver
 cask 'alfred'                               # Alfred (great clipboard history)
 cask 'appcleaner'                           # App for deleting apps
-cask 'docker'                               # virtualization containers management
+cask 'docker'                               # UI for virtualization containers management
 cask 'google-chrome'                        # browser
 cask 'grammarly'                            # spell checking
 cask 'insomnia'                             # http client

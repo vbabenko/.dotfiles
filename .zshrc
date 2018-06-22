@@ -49,7 +49,7 @@ ZSH_THEME="spaceship"
 HIST_STAMPS="dd/mm/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=$DOTFILES
+# ZSH_CUSTOM=$DOTFILES/zsh
 ZSH_CUSTOM=$ZSH/custom
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
@@ -81,9 +81,6 @@ source $ZSH/oh-my-zsh.sh
 # Loading zsh-completions
 fpath=($(brew --prefix)/share/zsh-completions $fpath)
 
-# Load ssh keys
-source ${DOTFILES}/load_ssh_keys.zsh
-
 # Loading zsh plugins installed with Homebrew
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh           # MUST be last sourced plugin
@@ -96,9 +93,3 @@ bindkey '^[[B' history-substring-search-down
 # You may need to manually set your language environment
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-if [ ! -e $HOME/.rvm ]; then
-  export PATH="$PATH:$HOME/.rvm/bin"
-  source $HOME/.rvm/scripts/rvm
-fi

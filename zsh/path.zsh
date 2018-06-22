@@ -14,4 +14,4 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Load custom commands
 # Disabled this because I have no custom binaries at the moment.
-export PATH="$DOTFILES/bin:$PATH"
+# export PATH="$DOTFILES/bin:$PATH"
