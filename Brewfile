@@ -39,6 +39,7 @@ brew 'zsh-syntax-highlighting'              # zsh plugin
 cask 'aerial'                               # Apple TV Aerial screen saver
 cask 'alfred'                               # Alfred (great clipboard history)
 cask 'appcleaner'                           # App for deleting apps
+cask 'dash'                                 # Many developer documentations in one app with offline usage possible
 cask 'docker'                               # UI for virtualization containers management
 cask 'google-chrome'                        # browser
 cask 'grammarly'                            # spell checking
@@ -94,6 +95,7 @@ mas 'Day One', id: 1055511498               # markdown based journalig app
 mas 'Deliveries', id: 924726344             # delivery notifcations
 # mas 'EyeFitness', id: 1114775590          # eye training app
 mas 'Friendly Streaming', id: 553245401     # client for Netflix etc.
+mas 'Go2Shell', id: 445770608               # open shell from Finder
 mas 'Keynote', id: 409183694                # Apple keynotes editor
 mas 'Medis', id: 1063631769                 # redis client
 mas 'Mediunic', id: 1088945121              # medium client
