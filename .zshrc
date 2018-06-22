@@ -49,7 +49,6 @@ ZSH_THEME="spaceship"
 HIST_STAMPS="dd/mm/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=$DOTFILES/zsh
 ZSH_CUSTOM=$ZSH/custom
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
@@ -66,14 +65,10 @@ plugins=(
   npm
   colorize
   bundler
-  zsh-nvm
 )
 
-# Enabling nvm lazy loading
+# Enabling auto-switch of nvm based on .nvmrc
 export NVM_AUTO_USE=true
-
-# Loading iterm2 shell instegration if it exists
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # Activate Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh

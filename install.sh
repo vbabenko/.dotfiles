@@ -5,7 +5,7 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 echo "Setting up your Mac..."
 
-[[ -z "$DOTFILES" ]] && export DOTFILES="$HOME/.dotfiles"
+export DOTFILES=${DOTFILES:-$HOME/.dotfiles}
 
 # Setup Homebrew with all needed receipes, casks
 source $DOTFILES/install/brew &&

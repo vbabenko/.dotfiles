@@ -5,6 +5,7 @@ alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 # alias ll="$(brew --prefix coreutils)/libexec/gnubin/ls -ahlF --color --group-directories-first"
 # weather() { curl -4 wttr.in/${1:-antwerp} }
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
+alias linkzsh="source $DOTFILES/install/zsh"
 
 # Directories
 alias dotfiles="cd $DOTFILES"
