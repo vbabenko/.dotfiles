@@ -42,7 +42,8 @@ cask 'appcleaner'                           # App for deleting apps
 cask 'dash'                                 # Many developer documentations in one app with offline usage possible
 cask 'docker'                               # UI for virtualization containers management
 cask 'google-chrome'                        # browser
-case 'go2shell'                             # open shell from Finder
+cask 'go2shell'                             # open shell from Finder
+cask 'gpg-suite'                            # GPG encryption tools
 cask 'grammarly'                            # spell checking
 cask 'insomnia'                             # http client
 cask 'iterm2'                               # terminal app
