@@ -54,6 +54,7 @@ cask 'raindropio'                           # bookmarks
 cask 'rescuetime'                           # time tracking app
 cask 'robo-3t'                              # mongodb client
 cask 'sip'                                  # color picking tool
+cask 'sip2sip'                              # SIP voice calling
 cask 'sizeup'                               # arrang windows
 cask 'sourcetree'                           # git client
 cask 'teamviewer'                           # remote control
