@@ -8,7 +8,7 @@ tap 'neovim/neovim'
 tap 'rogual/neovim-dot-app'
 
 # Java dependency
-cask 'java'                                 # for working with internet banking
+cask 'java'                                 # for working with internet banking and installing some dependencies
 
 # Install Binaries
 brew 'awscli'                               # AWS cli
@@ -89,28 +89,29 @@ cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 # Install Mac App Store apps
-mas '1Blocker', id: 1107421413              # ads blocker for safari
 mas '1Password 7', id: 1333542190           # password manager
 mas 'Agenda', id: 1287445660                # work related markdown editor
 mas 'Amphetamine', id: 937984704            # prevent laptop from sleeping
-mas 'Commander One', id: 1035236694         # file manager
 mas 'Day One', id: 1055511498               # markdown based journalig app
-mas 'Deliveries', id: 924726344             # delivery notifcations
-# mas 'EyeFitness', id: 1114775590          # eye training app
 mas 'Friendly Streaming', id: 553245401     # client for Netflix etc.
 mas 'Keynote', id: 409183694                # Apple keynotes editor
-mas 'Medis', id: 1063631769                 # redis client
 mas 'Mediunic', id: 1088945121              # medium client
-mas 'Monit', id: 1014850245                 # sidebar CPU/memory/... widget
 mas 'Numbers', id: 409203825                # Apple spreadsheets editor
 mas 'Pages', id: 409201541                  # Apple rich text editor
+mas 'Slack', id: 803453959                  # team communication tool
+mas 'The Unarchiver', id: 425424353         # archiving tool
+mas 'UlyssesMac', id: 1225570693            # markdown editor
+mas 'Xcode', id: 497799835                  # Apple IDE
+
+# Paid Mac App Store apps
+mas '1Blocker', id: 1107421413              # ads blocker for safari
+# mas 'Deliveries', id: 924726344           # delivery notifcations
+# mas 'EyeFitness', id: 1114775590          # eye training app
+mas 'Medis', id: 1063631769                 # redis client
+mas 'Monit', id: 1014850245                 # sidebar CPU/memory/... widget
 mas 'Paste', id: 967805235                  # clipboard history
 mas 'PDF Expert', id: 1055273043            # powerful PDF reader
 mas 'PopClip', id: 445189367                # iOS style copy/paste menu
 # mas 'Reeder', id: 880001334               # news reader
-mas 'Slack', id: 803453959                  # team communication tool
-mas 'The Unarchiver', id: 425424353         # archiving tool
 mas 'Things3', id: 904280696                # task manager
-mas 'UlyssesMac', id: 1225570693            # markdown editor
-mas 'Xcode', id: 497799835                  # Apple IDE
 mas 'Wallpaper Wizard', id: 1266674560      # wallpaper manager
