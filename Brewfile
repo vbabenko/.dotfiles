@@ -68,9 +68,11 @@ cask 'backblaze'                            # backup system
 cask 'bartender'                            # hide icons in macOS menu bar
 cask 'beamer'                               # stream videos to Apple TV
 cask 'daisydisk'                            # analyze disk usage in a visual way
+cask 'eaglefiler'                           # documents management application
 cask 'expressvpn'                           # VPN client
 cask 'microsoft-office'                     # Microsoft Word, Excel etc.
-cask 'sketch'                               # vector editor
+cask 'parallels'                            # virtualization engine
+cask 'sketch'                               # vector graphics editor
 cask 'transmit'                             # ftp client
 
 # Quicklook
@@ -90,7 +92,7 @@ cask 'font-source-serif-pro'
 
 # Install Mac App Store apps
 mas '1Password 7', id: 1333542190           # password manager
-mas 'Agenda', id: 1287445660                # work related markdown editor
+# mas 'Agenda', id: 1287445660              # work related markdown editor
 mas 'Amphetamine', id: 937984704            # prevent laptop from sleeping
 mas 'Day One', id: 1055511498               # markdown based journalig app
 mas 'Friendly Streaming', id: 553245401     # client for Netflix etc.
@@ -99,18 +101,22 @@ mas 'Mediunic', id: 1088945121              # medium client
 mas 'Numbers', id: 409203825                # Apple spreadsheets editor
 mas 'Pages', id: 409201541                  # Apple rich text editor
 mas 'Slack', id: 803453959                  # team communication tool
+mas 'Spark', id: 1176895641                 # email client
 mas 'The Unarchiver', id: 425424353         # archiving tool
 mas 'UlyssesMac', id: 1225570693            # markdown editor
 mas 'Xcode', id: 497799835                  # Apple IDE
 
 # Paid Mac App Store apps
 mas '1Blocker', id: 1107421413              # ads blocker for safari
-# mas 'Deliveries', id: 924726344           # delivery notifcations
+mas 'Caffeinated', id: 1362171212           # prevent screen from sleeping
+# mas 'Deliveries', id: 924726344           # parcel delivery notifcations
 # mas 'EyeFitness', id: 1114775590          # eye training app
+mas 'IP Man', id: 1368026859                # get info about public ip address
 mas 'Medis', id: 1063631769                 # redis client
 mas 'Monit', id: 1014850245                 # sidebar CPU/memory/... widget
 mas 'Paste', id: 967805235                  # clipboard history
 mas 'PDF Expert', id: 1055273043            # powerful PDF reader
+mas 'Pixelmator Pro', id: 1289583905        # image editor
 mas 'PopClip', id: 445189367                # iOS style copy/paste menu
 # mas 'Reeder', id: 880001334               # news reader
 mas 'Things3', id: 904280696                # task manager
