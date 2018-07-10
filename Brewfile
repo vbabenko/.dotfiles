@@ -92,7 +92,7 @@ cask 'font-source-serif-pro'
 
 # Install Mac App Store apps
 mas '1Password 7', id: 1333542190           # password manager
-# mas 'Agenda', id: 1287445660              # work related markdown editor
+mas 'Agenda', id: 1287445660                # work related markdown editor
 mas 'Amphetamine', id: 937984704            # prevent laptop from sleeping
 mas 'Day One', id: 1055511498               # markdown based journalig app
 mas 'Friendly Streaming', id: 553245401     # client for Netflix etc.
