@@ -24,6 +24,7 @@ brew 'neovim'                               # alternative editor to vim
 brew 'neovim-dot-app'                       # saparate app for neovim
 brew 'node'                                 # node.js engine
 brew 'peco'                                 # powerful alternative to grep
+brew 'phantomjs'                            # headless browser for automated testing
 brew 'redis'                                # in memory key value database
 brew 'trash'                                # allow to "Send to trash" from commands line
 brew 'tree'                                 # show file tree
