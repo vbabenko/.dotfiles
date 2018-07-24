@@ -50,6 +50,7 @@ cask 'insomnia'                             # http client
 cask 'iterm2'                               # terminal app
 cask 'java'                                 # for working with internet banking
 cask 'mongodb'                              # noSQL database UI
+cask 'plex-media-player'                    # client for Plex media server
 cask 'postman'                              # http client
 cask 'raindropio'                           # bookmarks
 cask 'rescuetime'                           # time tracking app
