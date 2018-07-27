@@ -49,6 +49,7 @@ cask 'grammarly'                            # spell checking
 cask 'insomnia'                             # http client
 cask 'iterm2'                               # terminal app
 cask 'java'                                 # for working with internet banking
+cask 'kindle'                               # Kindle books client
 cask 'mongodb'                              # noSQL database UI
 cask 'plex-media-player'                    # client for Plex media server
 cask 'postman'                              # http client
