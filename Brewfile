@@ -40,6 +40,7 @@ brew 'zsh-syntax-highlighting'              # zsh plugin
 cask 'aerial'                               # Apple TV Aerial screen saver
 cask 'alfred'                               # Alfred (great clipboard history)
 cask 'appcleaner'                           # App for deleting apps
+cask 'aware'                                # menu bar app to tell how long you've been using the mac
 cask 'dash'                                 # Many developer documentations in one app with offline usage possible
 cask 'docker'                               # UI for virtualization containers management
 cask 'google-chrome'                        # browser
@@ -48,7 +49,6 @@ cask 'gpg-suite'                            # GPG encryption tools
 cask 'grammarly'                            # spell checking
 cask 'insomnia'                             # http client
 cask 'iterm2'                               # terminal app
-cask 'java'                                 # for working with internet banking
 cask 'kindle'                               # Kindle books client
 cask 'mongodb'                              # noSQL database UI
 cask 'plex-media-player'                    # client for Plex media server
