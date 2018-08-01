@@ -21,6 +21,8 @@ npm install -g npm@latest &&         # latest npm
 npm install -g npm-check &&          # package versions management tool
 npm install -g @vue/cli vue-cli &&   # vue.js setup templates
 npm install -g http-server           # static http server
+npm install -g docsify               # documentation engine
+npm install -g serverless            # serverless framework
 
 npx npm-merge-driver install -g      # npm extension to help resolve conflicts in package-lock.json automaticvally
 "
