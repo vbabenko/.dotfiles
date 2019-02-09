@@ -15,9 +15,10 @@ nvm alias default 8.11
 nvm use 8.11 &&
 npm install -g npm@latest &&         # latest npm
 npm install -g npm-check &&          # package versions management tool
-npm install -g http-server           # static http server
-npm install -g docsify               # documentation engine
-npm install -g serverless            # serverless framework
+npm install -g http-server &&        # static http server
+npm install -g docsify &&            # documentation engine
+npm install -g serverless &&         # serverless framework
+npm install -g elasticdump           # elasticsearch databese dump
 
 npx npm-merge-driver install -g      # npm extension to help resolve conflicts in package-lock.json automaticvally
 "

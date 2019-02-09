@@ -43,7 +43,7 @@ brew 'zsh-syntax-highlighting'                  # zsh plugin
 
 # Apps
 # cask 'aerial'                                 # Apple TV Aerial screen saver
-cask 'alfred'                                   # Alfred (great clipboard history)
+# cask 'alfred'                                 # Alfred (great clipboard history)
 cask 'cloudapp'                                 # Screen recorder
 cask 'docker'                                   # UI for virtualization containers management
 # cask 'appcleaner'                             # App for deleting apps
@@ -75,6 +75,7 @@ cask 'telegram'                                 # messenger
 cask 'visual-studio-code'                       # ide
 cask 'vlc'                                      # video player
 cask 'webstorm'                                 # ide
+cask 'intellij-idea'                            # ide
 
 # Paid apps
 # cask 'backblaze'                            # backup system
