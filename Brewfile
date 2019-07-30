@@ -65,7 +65,7 @@ cask 'postman'                                  # http client
 cask 'skype'                                    # messenger
 cask 'slack'                                    # messenger
 cask 'sublime-text'                             # text editor
-cask 'sip'                                      # color picking tool
+# cask 'sip'                                    # color picking tool
 # cask 'sizeup'                                 # arrang windows
 cask 'sourcetree'                               # git client
 # cask 'teamviewer'                             # remote control
@@ -75,7 +75,7 @@ cask 'telegram'                                 # messenger
 cask 'visual-studio-code'                       # ide
 cask 'vlc'                                      # video player
 cask 'webstorm'                                 # ide
-cask 'intellij-idea'                            # ide
+# cask 'intellij-idea'                          # ide
 
 # Paid apps
 # cask 'backblaze'                            # backup system
